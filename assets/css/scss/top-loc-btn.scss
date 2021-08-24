@@ -1,0 +1,88 @@
+$color-primaire:#9356DC;
+$color-secondaire:#FF79DA;
+$color-tertiaire:#99E2D0;
+$color-gris-sombre:#eaeaea;
+$color-gris-clair:#f6f6f6;
+
+
+
+.img-ohmyfood-top{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 65px;
+    
+}
+
+.phrases-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $color-gris-clair;
+        .top-loc{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            background: $color-gris-sombre;
+            width: 100%;
+                p{
+                    margin-left: 1.5rem;
+                }
+        }
+}
+
+.text-decouverte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+        .text-1{
+            width: 70%;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+                
+        }
+}
+
+.text-decouverte{
+    .text-2{
+        margin: 1rem 0 ;
+        width: 80%;
+        text-align: center;
+        
+    }
+}
+
+.btn-explore{
+    button{
+        border-radius: 20px;
+        height: 40px;
+        width: 185px;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        background: $color-primaire;
+        border: $color-secondaire;
+            span{
+                color: white;
+            }
+    }
+}
+
+.vignettes-choix{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+        h1{
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+                
+        }
+}
+
+
+
+    
+
