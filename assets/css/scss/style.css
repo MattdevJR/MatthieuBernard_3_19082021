@@ -6,28 +6,26 @@
   padding: 0;
 }
 
-.form__matthieu {
-  color: red;
-}
+/*
+.form{
+    &__matthieu{
+        color: red;
 
-.form__jeremy {
-  color: blue;
-}
-
-.form__jeremy:hover {
-  background: pink;
-}
-
-.form__jeremy::after {
-  content: "oui oui oui";
-}
-
-@media screen and (max-width: ) {
-  .form__jeremy {
-    color: green;
-  }
-}
-
+    }
+    &__jeremy{
+        color: blue;
+        &:hover{
+            background: pink;
+         }
+         &::after{
+             content: "oui oui oui";
+         }
+         @media screen and (max-width:$mobil) {
+             color: green;
+         }
+    }
+    
+}*/
 .img-ohmyfood-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -116,7 +114,46 @@
   color: white;
 }
 
-.vignettes-choix {
+.cards_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem;
+}
+
+.cards_container img {
+  width: 100%;
+  max-height: 135px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 1rem;
+}
+
+.cards_container img .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.footer_liens {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,18 +161,22 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 2rem;
+  background-color: #353535;
 }
 
-.vignettes-choix h1 {
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: baseline;
-      -ms-flex-pack: baseline;
-          justify-content: baseline;
-  background: blue;
+.footer_liens img {
+  width: 115px;
+  margin: 1.5rem 1rem;
+  color: white;
+}
+
+.footer_liens a {
+  text-decoration: none;
+  color: white;
+  margin: 0.5rem 1rem;
+}
+
+.footer_liens a span {
+  margin: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

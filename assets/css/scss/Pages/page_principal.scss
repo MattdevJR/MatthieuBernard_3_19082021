@@ -75,10 +75,24 @@ $color-gris-clair:#f6f6f6;
 
 .cards_container{
     display: flex;
-    max-width: 337px;
-    max-height: 269.44px;
-    background: red;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+        img{
+            width: 100%;
+            max-height: 135px;
+            object-fit: cover;
+            margin: 1rem;
+                .description{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                }
+        }
 }
+
 
 
     
