@@ -4,7 +4,9 @@ $color-tertiaire:#99E2D0;
 $color-gris-sombre:#eaeaea;
 $color-gris-clair:#f6f6f6;
 
-
+header, main{
+    width: 100%;
+}
 
 .img-ohmyfood-top{
     display: flex;
@@ -71,13 +73,63 @@ $color-gris-clair:#f6f6f6;
     }
 }
 
+.btn-choix-top{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+        h1{
+            margin: 2rem 0rem;
+            
+        }
+}
 
+.container__choix{
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 25px;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin: 0.5rem;
+        .number{
+            border-radius: 50px;
+            border: 1px solid black;
+            height: 15px;
+            width: 25px;
+        }
+
+}
+
+
+
+
+
+.cards_restaurants{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .cards_container{
     display: flex;
-    max-width: 337px;
-    max-height: 269.44px;
-    background: red;
+        flex-direction: column;
+        margin: 1rem;
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: white;
+        width: 340px;
+        height: 220px;
+        
+            a{
+                text-decoration: none;
+                color: black;
+                img{
+                    width: 340px;
+                    height: 150px;
+                    object-fit: cover;
+                    border-radius: 20px 20px 0px 0px;
+                }
+            }
 }
 
 
