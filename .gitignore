@@ -1,0 +1,4 @@
+*.map
+*.tmp
+*.exe
+dart-sass/*

@@ -1,0 +1,201 @@
+
+@use "utils" as *;
+@use "layout/menu";
+@use "layout/footer";
+
+@import url('https://fonts.googleapis.com/css2? family= Roboto & family= Shrikhand & display=swap');
+
+*{
+    
+    font-family : 'Shrikhand', cursif ;
+    font-family : 'Roboto', sans-serif ;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    margin: 0%;
+}
+header, main{
+    width: 100%;
+}
+
+.img-ohmyfood-top{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 65px;
+    
+}
+
+.phrases-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $color-gris-clair;
+    justify-content: center;
+        &__top-loc{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            background: $color-gris-sombre;
+            width: 100%;
+            box-shadow: 0px 10px 10px -10px #666 inset;
+                &__icon{
+                    margin: 1rem;  
+                    &__zdt{
+                        border: 1px solid transparent;
+                        background: transparent;
+                        font-weight: bold;
+                        color: black;
+                    }   
+                }
+                
+        }
+}
+
+
+.phrases-top{
+    &__text-decouverte{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2.5rem;
+            &__text-1{
+                width: 70%;
+                font-weight: bold;
+                text-align: center;
+                    &__text-2{
+                        margin: 1rem 0 ;
+                        width: 80%;
+                        text-align: center; 
+                    }
+            }
+    }
+}
+
+.btn-explore{
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+        height: 45px;
+        width: 190px;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        background-image: linear-gradient( $color-secondaire ,$color-primaire);
+        border: $color-secondaire;
+            &__text{
+                align-items: center;
+                border: transparent;
+                background: transparent;
+                color: white;
+            }
+}
+
+.btn-choix-top{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 1rem;
+        h1{  
+            margin: 1rem;
+            width: 100%;
+        }   
+}
+
+
+.container-choix{
+        display: flex;
+        border-radius: 20px;
+        margin: 0.8rem 1rem;
+        height: 70px;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            &__number{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                padding: 0.5rem;
+                height: 15px;
+                width: 15px;
+                text-align: center;
+                margin: -1rem;
+                background: $color-primaire;
+                color: white;
+                    &__icon{
+                        font-size: 25px;
+                        color: #828282;
+                        margin-left: 2.5rem;
+                            &__text{
+                                color: black;
+                                font-weight: bold;
+                                margin-left: 1rem;
+                            }
+                    }
+                    
+                    
+            }
+    }
+
+.choix_restaurants{
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+    background: $color-gris-sombre;
+        h1{
+            margin: 3rem 1rem 1rem 1rem;
+        }
+}
+
+.cards_container{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+    width: 340px;
+    height: 220px;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        &__images_restaurant{
+            width: 340px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 20px 20px 0px 0px;
+                &__description{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0.8rem;
+                }
+
+        }
+}
+
+
+/*PAGES RESTAURANTS*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
