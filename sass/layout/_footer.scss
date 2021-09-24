@@ -1,9 +1,10 @@
 @use "../utils/" as *;
-
+/*
 .footer_liens{
     display: flex;
     flex-direction: column;
     background-color: #353535;
+
     @media screen and (min-width:992px){
         flex-direction: row;
     }
@@ -16,13 +17,33 @@
                 text-decoration: none;
                 color: white;
                 margin: 0.5rem 1rem;
-                    span{
-                    margin: 1rem;
-                }
+                    
                 .partenaire{
                     margin: 0.5rem;
                 }
         }
         
+}*/
+
+.footer_liens{
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+        img{
+            width: 115px;
+            margin: 1.5rem 1rem;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            margin: 0.5rem 1rem;
+                .restaurant{
+                    margin-left:  1rem;
+                }
+                .partenaire{
+                    margin-left: 0.5rem;
+                }
+        }
 }
 
