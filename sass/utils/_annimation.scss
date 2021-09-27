@@ -18,7 +18,7 @@
     border: 7px solid #9356DC;
     border-top: 7px solid #99E2D0;
     border-radius: 50%;
-    width: 100px;
+    width: 70px;
     height: 70px;
     animation: loading 2s ease-in-out;
     animation-iteration-count: 3;
@@ -41,11 +41,11 @@
     }
     75%
     { 
-        transform: rotate(540deg); 
+        transform: rotate(180deg); 
     }
     100%
     { 
-        transform: rotate(720deg);
+        transform: rotate(0deg);
     }
 }
 
@@ -77,14 +77,15 @@
 @keyframes fadein 
 {
     0% {
-        opacity:0;
+        transform: translate3d(0, -50px, 0);
     } 
     50% {
-        opacity: 0.5;
+        transform: translate3d(0, 50px, 0);
     }
     100% {
-        opacity:1;
+        transform: translate3d(0, 0, 0);
     }
+
 }
 
 

@@ -28,7 +28,8 @@
     margin: 1rem;
     display: flex;
     background-color: #fff;
-    animation: fadein 2s;
+    animation: fadein 1s forwards;
+    
     &:hover .valid{
         display: flex;
         background-color: $color-tertiaire;
@@ -45,12 +46,17 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        margin:  0.5rem 0.5rem;
+        margin:  0.5rem 1em;
         align-items: center;
         font-size: 17px;
-        
         &__descrp{
-            text-overflow: ellipsis;
+            p,h4{
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                width: 283px;
+                flex-shrink: 0;
+            }
             &__price{
                 border: 1px solid transparent;
                 &:hover{

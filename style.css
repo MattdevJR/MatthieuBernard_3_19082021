@@ -17,7 +17,7 @@
   border: 7px solid #9356DC;
   border-top: 7px solid #99E2D0;
   border-radius: 50%;
-  width: 100px;
+  width: 70px;
   height: 70px;
   animation: loading 2s ease-in-out;
   animation-iteration-count: 3;
@@ -34,10 +34,10 @@
     transform: rotate(360deg);
   }
   75% {
-    transform: rotate(540deg);
+    transform: rotate(180deg);
   }
   100% {
-    transform: rotate(720deg);
+    transform: rotate(0deg);
   }
 }
 @keyframes loadinger {
@@ -56,13 +56,13 @@
 }
 @keyframes fadein {
   0% {
-    opacity: 0;
+    transform: translate3d(0, -50px, 0);
   }
   50% {
-    opacity: 0.5;
+    transform: translate3d(0, 50px, 0);
   }
   100% {
-    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
 /*Entrées, Plats, Desserts*/
@@ -92,7 +92,7 @@
   margin: 1rem;
   display: flex;
   background-color: #fff;
-  animation: fadein 2s;
+  animation: fadein 1s forwards;
 }
 .container_enter:hover .valid {
   display: flex;
@@ -109,12 +109,16 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 0.5rem 0.5rem;
+  margin: 0.5rem 1em;
   align-items: center;
   font-size: 17px;
 }
-.container_enter__first_container__descrp {
+.container_enter__first_container__descrp p, .container_enter__first_container__descrp h4 {
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 283px;
+  flex-shrink: 0;
 }
 .container_enter__first_container__descrp__price {
   border: 1px solid transparent;
@@ -259,7 +263,7 @@ header, main {
 .btn-explore {
   display: flex;
   justify-content: center;
-  border-radius: 20px;
+  border-radius: 2rem;
   height: 45px;
   width: 190px;
   margin-top: 1rem;
@@ -304,6 +308,9 @@ header, main {
   background-color: #f5edff;
   cursor: pointer;
 }
+.btn-choix-top .container-choix:hover i {
+  color: #9356DC;
+}
 .btn-choix-top .container-choix__number {
   display: flex;
   align-items: center;
@@ -321,9 +328,6 @@ header, main {
   font-size: 25px;
   color: #828282;
   margin-left: 2.5rem;
-}
-.btn-choix-top .container-choix__number__icon:hover {
-  color: #9356DC;
 }
 .btn-choix-top .container-choix__number__icon__text {
   color: black;
@@ -374,14 +378,30 @@ header, main {
 .choix_restaurants .cards_container__button_new {
   position: absolute;
   width: 75px;
-  /* left: 425px; */
   background-color: #99E2D0;
   border-radius: 0.2rem;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 230px;
+  padding: 8px;
+  font-weight: bold;
+  color: #018767;
+}
+@media screen and (min-width: 992px) {
+  .choix_restaurants .cards_container__button_new {
+    margin-top: 25px;
+    margin-left: 335px;
+  }
+}
+@media screen and (min-width: 1416px) {
+  .choix_restaurants .cards_container__button_new {
+    margin-top: 25px;
+    margin-left: 535px;
+  }
 }
 .choix_restaurants .cards_container__button_new__images_restaurant {
   width: 340px;
   height: 170px;
-  /*150*/
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
@@ -401,6 +421,12 @@ header, main {
   display: flex;
   justify-content: space-between;
   margin: 0.8rem;
+}
+.choix_restaurants .cards_container__button_new__images_restaurant__description__nom_lieu h3:nth-child(3) {
+  color: red;
+}
+.choix_restaurants .cards_container:nth-child(3) h3:hover, .choix_restaurants .cards_container:nth-child(4) h3:hover {
+  color: yellow;
 }
 .choix_restaurants .cards_container:last-child {
   margin-bottom: 4rem;
@@ -435,6 +461,15 @@ header, main {
   top: 230px;
   font-size: 23px;
   z-index: 0;
+  /*  i{
+       display: block;
+
+       &:hover{
+           background: linear-gradient( $color-secondaire ,$color-primaire);
+
+       }
+
+   } */
 }
 .top_page_restaurants .title_restaurants h3 {
   font-family: "Shrikhand", cursif;

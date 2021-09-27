@@ -93,7 +93,7 @@ header, main{
 .btn-explore{
         display: flex;
         justify-content: center;
-        border-radius: 20px;
+        border-radius: 2rem;
         height: 45px;
         width: 190px;
         margin-top: 1rem;
@@ -114,58 +114,56 @@ header, main{
     flex-wrap: wrap;
     justify-content: center;
     margin: 2rem 1rem;
-    
-        h1{  
-            margin: 1rem;
-            width: 100%;
-            @media screen and (min-width:376px){
-                text-align: center;
+    h1{  
+        margin: 1rem;
+        width: 100%;
+        @media screen and (min-width:376px){
+            text-align: center;
+        }
+    }
+    .container-choix{
+        display: flex;
+        border-radius: 20px;
+        margin: 0.8rem 1rem;
+        height: 70px;
+        justify-content: flex-start;
+        align-items: center;
+        width: 311px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        &:hover{
+            background-color: #f5edff;
+            cursor: pointer;
+            i{
+                color: $color-primaire;
             }
         }
-        .container-choix{
+        &__number{
             display: flex;
-            border-radius: 20px;
-            margin: 0.8rem 1rem;
-            height: 70px;
-            justify-content: flex-start;
             align-items: center;
-            width: 311px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            &:hover{
-                background-color: #f5edff;
-                cursor: pointer;
-            }
-            
-                &__number{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 50%;
-                    padding: 0.5rem;
-                    height: 15px;
-                    width: 15px;
-                    text-align: center;
-                    margin: -1rem;
-                    background: $color-primaire;
-                    color: white;
-                        &__icon{
-                            font-size: 25px;
-                            color: #828282;
-                            margin-left: 2.5rem;
-                            &:hover{
-                                color: $color-primaire;
-                            }
-                                &__text{
-                                    color: black;
-                                    font-weight: bold;
-                                    margin-left: 1rem;
-                                }
-                        }
-                        
-                        
-                        
-                }
-        }   
+            justify-content: center;
+            border-radius: 50%;
+            padding: 0.5rem;
+            height: 15px;
+            width: 15px;
+            text-align: center;
+            margin: -1rem;
+            background: $color-primaire;
+            color: white;
+            &__icon{
+                font-size: 25px;
+                color: #828282;
+                margin-left: 2.5rem;
+                    &__text{
+                        color: black;
+                        font-weight: bold;
+                        margin-left: 1rem;
+                    }
+            }    
+        }
+    }
+    
+     
+     
 }
 
 
@@ -200,37 +198,63 @@ header, main{
                 width: 640px;
                 height: 544px;
             }
-                a{
-                    text-decoration: none;
-                    color: black;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            &__button_new{
+                position: absolute;
+                width: 75px;
+                background-color: $color-tertiaire;
+                border-radius: 0.2rem;
+                text-align: center;
+                margin-top: 15px;
+                margin-left: 230px;
+                padding: 8px;
+                font-weight: bold;
+                color: #018767;
+                @media screen and (min-width:992px){
+                    margin-top: 25px;
+                    margin-left: 335px;
                 }
-                &__button_new{
-                    position: absolute;
-                    width: 75px;
-                    /* left: 425px; */
-                    background-color: $color-tertiaire;
-                    border-radius: 0.2rem;
-                    &__images_restaurant{
-                        width: 340px;
-                        height: 170px;/*150*/
-                        object-fit: cover;
-                        border-radius: 20px 20px 0px 0px;
-                        @media screen and (min-width:992px){
-                            width: 440px;
-                            height: 270px;
-                        }
-                        @media screen and (min-width:1416px){
-                            width: 640px;
-                            height: 472px;
-                        }
-                        &__description{
-                            display: flex;
-                            justify-content: space-between;
-                            margin: 0.8rem;
-                            }
-                        
+                @media screen and (min-width:1416px){
+                    margin-top: 25px;
+                    margin-left: 535px;
+                }
+                &__images_restaurant{
+                    width: 340px;
+                    height: 170px;
+                    object-fit: cover;
+                    border-radius: 20px 20px 0px 0px;
+                    @media screen and (min-width:992px){
+                        width: 440px;
+                        height: 270px;
                     }
+                    @media screen and (min-width:1416px){
+                        width: 640px;
+                        height: 472px;
+                    }
+                    &__description{
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 0.8rem;
+                        &__nom_lieu{
+                                h3:nth-child(3){
+                                color: red;
+                            }
+                        }
+                        }
+                    
                 }
+            }
+            &:nth-child(3), &:nth-child(4){
+                h3{
+                    &:hover{
+                        color: yellow;
+                    }
+                    
+                }
+            }
         }
         .cards_container:last-child{
             margin-bottom: 4rem;
@@ -272,8 +296,17 @@ header, main{
             font-size: 23px;
             z-index: 0;
                 h3{
-                    font-family : 'Shrikhand', cursif ;
+                    font-family : 'Shrikhand', cursif ; 
                 }
+               /*  i{
+                    display: block;
+                   
+                    &:hover{
+                        background: linear-gradient( $color-secondaire ,$color-primaire);
+                        
+                    }
+                        
+                } */
                 
         }  
 }
