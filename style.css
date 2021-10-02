@@ -13,12 +13,18 @@
   animation-fill-mode: both;
 }
 
+@keyframes loadinger {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 .loading {
   border: 7px solid #9356DC;
   border-top: 7px solid #99E2D0;
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 150px;
+  height: 150px;
   animation: loading 2s ease-in-out;
   animation-iteration-count: 3;
 }
@@ -26,24 +32,28 @@
 @keyframes loading {
   0% {
     transform: rotate(0deg);
+    border: 7px solid #99E2D0;
+    border-top: 7px solid #9356DC;
   }
   25% {
     transform: rotate(180deg);
+    border: 15px solid #9356DC;
+    border-top: 15px solid #99E2D0;
   }
   50% {
     transform: rotate(360deg);
+    border: 7px solid #99E2D0;
+    border-top: 7px solid #9356DC;
   }
   75% {
-    transform: rotate(180deg);
+    transform: rotate(540deg);
+    border: 15px solid #99E2D0;
+    border-top: 15px solid #9356DC;
   }
   100% {
-    transform: rotate(0deg);
-  }
-}
-@keyframes loadinger {
-  100% {
-    opacity: 0;
-    z-index: -1;
+    transform: rotate(720deg);
+    border: 10px solid #99E2D0;
+    border-top: px solid #9356DC;
   }
 }
 @keyframes checked_menu {
@@ -59,18 +69,10 @@
     transform: translate3d(0, -50px, 0);
   }
   50% {
-    transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, -100px, 0);
   }
   100% {
     transform: translate3d(0, 0, 0);
-  }
-}
-@keyframes amour {
-  0% {
-    color: grey;
-  }
-  100% {
-    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   }
 }
 /*Entrées, Plats, Desserts*/
@@ -121,18 +123,9 @@
   align-items: center;
   font-size: 17px;
 }
-.container_enter__first_container__descrp p, .container_enter__first_container__descrp h4 {
+.container_enter__first_container__decrp h4, .container_enter__first_container__decrp p {
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
-  width: 283px;
-  flex-shrink: 0;
-}
-.container_enter__first_container__descrp__price {
-  border: 1px solid transparent;
-}
-.container_enter__first_container__descrp__price:hover {
-  display: none;
 }
 .container_enter .valid {
   display: flex;
@@ -469,7 +462,6 @@ header, main {
 }
 .choix_restaurants .cards_container__button_new__images_restaurant__description__nom_lieu__coeur input {
   position: absolute;
-  width: 10rem;
   height: 10rem;
   opacity: 0;
   cursor: pointer;
