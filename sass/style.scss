@@ -275,7 +275,9 @@ header, main{
                                       }
                                       input{
                                         position: absolute;
-                                        height: 10rem;
+                                        width: 3rem;
+                                        height: 3rem;
+                                        margin-right: 2rem;
                                         opacity: 0;
                                         cursor: pointer;
                                         z-index: 3;
