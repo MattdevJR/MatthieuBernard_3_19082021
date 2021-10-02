@@ -44,8 +44,8 @@
     25%
     { 
         transform: rotate(180deg);
-        border: 15px solid  #9356DC;
-        border-top: 15px solid #99E2D0;
+        border: 7px solid  #9356DC;
+        border-top:7px solid #99E2D0;
     }
     50%
     { 
@@ -56,15 +56,15 @@
     75%
     { 
         transform: rotate(540deg);
-        border: 15px solid #99E2D0 ;
-        border-top: 15px solid #9356DC;
+        border: 7px solid #99E2D0 ;
+        border-top: 7px solid #9356DC;
          
     }
     100%
     { 
         transform: rotate(720deg);
-        border: 10px solid #99E2D0 ;
-        border-top: px solid #9356DC;
+        border: 7px solid #99E2D0 ;
+        border-top: 7px solid #9356DC;
     }
 }
 
