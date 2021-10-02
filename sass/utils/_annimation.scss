@@ -89,3 +89,12 @@
 }
 
 
+@keyframes amour
+{
+    0%{
+        color: grey;
+    }
+    100%{
+        background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    }
+} 
