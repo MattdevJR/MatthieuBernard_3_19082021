@@ -561,7 +561,6 @@ header, main {
 }
 .top_page_restaurants .title_restaurants .fa-heart {
   font-size: 2rem;
-  margin-right: -2rem;
 }
 .top_page_restaurants .title_restaurants input:checked ~ .far {
   transition-duration: 0.5s;
