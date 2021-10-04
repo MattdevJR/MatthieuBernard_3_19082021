@@ -7,10 +7,10 @@
     flex-direction: column;
     background-color: $color-gris-clair;
         &__title{
-            margin: 1rem 1rem 0 1rem;
-            
-            padding: 0.5rem 0;
-            width: 50px;
+            padding: 1rem 0 0 1rem;
+            z-index: 100;
+            width: 100%;
+            background-color:inherit;
             &__sousligne{
                 width: 50px;
                 height: 4px;
@@ -29,7 +29,8 @@
     margin: 1rem;
     display: flex;
     background-color: #fff;
-    animation: fadein 1s forwards;
+    animation: slide-in-top 0.75s ease-out;
+    cursor: pointer;
     
     &:hover .valid{
         display: flex;
@@ -38,10 +39,10 @@
         color: #fff;
         width: 5rem;
         border-radius: 0 20px 20px 0;
-        
+        cursor: pointer;
     }
     &:hover i{
-        animation: checked_menu 1s;
+        animation: checked_menu 1s ;
     }
     &__first_container{
         display: flex;
@@ -50,18 +51,18 @@
         margin:  0.5rem 1em;
         align-items: center;
         font-size: 17px;
+        overflow: auto;
         &__decrp{
-            h4,p{
+            white-space: nowrap;
+            overflow: hidden;
+            h4{
+                font-size: 15.5px;
+            }
+            p{
                 text-overflow: ellipsis;
                 overflow: hidden;
-            
             }
-            
-            
-            
-        }
-        
-          
+        }   
     }
     .valid{
         display: flex;
@@ -70,7 +71,7 @@
         align-items: center;
         font-size: 30px;
         width: 0;
-        transition: width 0.5s ease-in-out;
+        transition: width 1s ease-in-out;
         
 
     }
