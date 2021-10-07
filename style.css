@@ -482,14 +482,14 @@ header, main {
   position: absolute;
   width: 3rem;
   height: 3rem;
-  margin-right: 2rem;
+  margin: 1rem 0rem 5rem 17rem;
   opacity: 0;
   cursor: pointer;
   z-index: 3;
 }
 .choix_restaurants .cards_container__button_new__images_restaurant__description__nom_lieu__coeur .fa-heart {
   font-size: 2rem;
-  margin-right: 2rem;
+  margin: 1rem 0rem 5rem 17rem;
 }
 .choix_restaurants .cards_container__button_new__images_restaurant__description__nom_lieu__coeur input:checked ~ .far {
   transition-duration: 0.5s;
@@ -566,8 +566,8 @@ header, main {
 }
 .top_page_restaurants .title_restaurants input {
   position: absolute;
-  width: 5rem;
-  height: 5rem;
+  width: 2rem;
+  height: 2rem;
   opacity: 0;
   cursor: pointer;
   z-index: 3;
