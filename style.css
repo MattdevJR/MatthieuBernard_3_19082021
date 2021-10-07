@@ -60,6 +60,10 @@
 @keyframes checked_menu {
   0% {
     transform: rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
   100% {
     transform: rotate(360deg);
@@ -76,27 +80,10 @@
     transform: translate3d(0, 0, 0);
   }
 }
-.slide-in-top {
-  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-/*  @-webkit-keyframes slide-in-top {
-    0% {
-      -webkit-transform: translateY(-150px);
-              transform: translateY(-150px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1;
-    }
-  } */
 @keyframes slide-in-top {
   0% {
-    -webkit-transform: translateY(-50px);
-    transform: translateY(-50px);
+    -webkit-transform: translateY(-190px);
+    transform: translateY(-190px);
     opacity: 0;
   }
   100% {
@@ -114,7 +101,6 @@
 .select_menu__title {
   padding: 1rem 0 0 1rem;
   z-index: 100;
-  width: 100%;
   background-color: inherit;
 }
 .select_menu__title__sousligne {
@@ -487,9 +473,29 @@ header, main {
   cursor: pointer;
   z-index: 3;
 }
+@media screen and (min-width: 992px) {
+  .choix_restaurants .cards_container__button_new__images_restaurant__description__nom_lieu__coeur input {
+    margin: 1rem 0rem 5rem 22rem;
+  }
+}
+@media screen and (min-width: 1416px) {
+  .choix_restaurants .cards_container__button_new__images_restaurant__description__nom_lieu__coeur input {
+    margin: 1rem 0rem 5rem 35rem;
+  }
+}
 .choix_restaurants .cards_container__button_new__images_restaurant__description__nom_lieu__coeur .fa-heart {
   font-size: 2rem;
   margin: 1rem 0rem 5rem 17rem;
+}
+@media screen and (min-width: 992px) {
+  .choix_restaurants .cards_container__button_new__images_restaurant__description__nom_lieu__coeur .fa-heart {
+    margin: 1rem 0rem 5rem 22rem;
+  }
+}
+@media screen and (min-width: 1416px) {
+  .choix_restaurants .cards_container__button_new__images_restaurant__description__nom_lieu__coeur .fa-heart {
+    margin: 1rem 0rem 5rem 35rem;
+  }
 }
 .choix_restaurants .cards_container__button_new__images_restaurant__description__nom_lieu__coeur input:checked ~ .far {
   transition-duration: 0.5s;
