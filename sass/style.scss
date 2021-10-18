@@ -3,8 +3,8 @@
 @use "layout/_footer";
 
 
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap'); 
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
 
 *{
     font-family : 'Roboto', sans-serif ;
@@ -102,11 +102,15 @@ header, main{
         margin-bottom: 3rem;
         background-image: linear-gradient( $color-secondaire ,$color-primaire);
         border: $color-secondaire;
+        /* transform: background-image 5s ease-in-out; */
+        /* box-shadow: 0 4px 4px 4px  */
+        box-shadow: rgba(0, 0, 0, 0.50) 0px 3px 8px;
         &:hover{
             cursor: pointer;
+            /* box-shadow: 0 4px 4px 10px ; */
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             opacity : 1;
-            
+            background-image: linear-gradient( $color-secondaire-light ,$color-primaire-light);
         }
             &__text{
                 align-items: center;
@@ -115,6 +119,7 @@ header, main{
                 color: white;
                 &:hover{
                     cursor: pointer;
+                    
                 }
             }
 }
