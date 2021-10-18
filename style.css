@@ -248,12 +248,6 @@ header, main {
   background: #f6f6f6;
   justify-content: center;
 }
-@media screen and (min-width: 768px) {
-  .phrases-top {
-    width: 768px;
-    margin: 0 auto;
-  }
-}
 .phrases-top__top-loc {
   display: flex;
   align-items: center;
@@ -307,7 +301,6 @@ header, main {
 .btn-explore:hover {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-image: #f5edff;
   opacity: 1;
 }
 .btn-explore__text {
@@ -318,6 +311,20 @@ header, main {
 }
 .btn-explore__text:hover {
   cursor: pointer;
+}
+
+.phrases-top2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f6f6f6;
+  justify-content: center;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .phrases-top2 {
+    width: 768px;
+  }
 }
 
 /*Button Fonctionnement*/
