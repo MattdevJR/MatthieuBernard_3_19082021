@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2? family= Roboto & family= Shrikhand & display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .loadcontent {
   position: fixed;
   width: 100%;
@@ -8,7 +9,7 @@
   align-items: center;
   justify-content: center;
   background-color: #FFFFFF80;
-  animation: loadinger 1s;
+  animation: loadinger 2s;
   animation-delay: 1s;
   animation-fill-mode: both;
   z-index: 1000;
@@ -26,7 +27,7 @@
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  animation: loading 1s ease-in-out;
+  animation: loading 2s ease-in-out;
   /* animation-iteration-count: 1; */
 }
 
@@ -69,17 +70,19 @@
     transform: rotate(360deg);
   }
 }
-@keyframes fadein {
-  0% {
-    transform: translate3d(0, -50px, 0);
-  }
-  50% {
-    transform: translate3d(0, -100px, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-}
+/* @keyframes fadein 
+{
+    0% {
+        transform: translate3d(0, -50px, 0);
+    } 
+    50% {
+        transform: translate3d(0, -100px, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+
+} */
 @keyframes slide-in-top {
   0% {
     -webkit-transform: translateY(-190px);
@@ -96,7 +99,14 @@
 .select_menu {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: #f6f6f6;
+}
+@media screen and (min-width: 768px) {
+  .select_menu {
+    width: 768px;
+    margin: 0 auto;
+  }
 }
 .select_menu__title {
   padding: 1rem 0 0 1rem;
@@ -120,8 +130,15 @@
   margin: 1rem;
   display: flex;
   background-color: #fff;
-  animation: slide-in-top 0.75s ease-out;
+  animation: slide-in-top 1.5s ease-out;
   cursor: pointer;
+}
+@media screen and (min-width: 455px) {
+  .container_enter {
+    width: 422px;
+    justify-content: center;
+    margin: 1rem auto;
+  }
 }
 .container_enter:hover .valid {
   display: flex;
@@ -207,7 +224,7 @@ header, main {
   width: 100%;
 }
 
-/*IMG TOP PAGE*/
+/*IMG TOP PAGE+fleche 2eme page*/
 .img-ohmyfood-top {
   display: flex;
   align-items: center;
@@ -230,6 +247,12 @@ header, main {
   align-items: center;
   background: #f6f6f6;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .phrases-top {
+    width: 768px;
+    margin: 0 auto;
+  }
 }
 .phrases-top__top-loc {
   display: flex;
@@ -283,6 +306,9 @@ header, main {
 }
 .btn-explore:hover {
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-image: #f5edff;
+  opacity: 1;
 }
 .btn-explore__text {
   align-items: center;
@@ -548,6 +574,12 @@ header, main {
   z-index: 100;
   /*QUAND LA CHECKBOX EST CHECK*/
   /*QUAND LA CHECKBOX EST CHECK*/
+}
+@media screen and (min-width: 768px) {
+  .top_page_restaurants .title_restaurants {
+    width: 720px;
+    margin: 0 auto;
+  }
 }
 .top_page_restaurants .title_restaurants h3 {
   font-family: "Shrikhand", cursif;

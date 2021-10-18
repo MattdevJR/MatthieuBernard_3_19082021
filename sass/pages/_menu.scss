@@ -5,7 +5,13 @@
 .select_menu{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: $color-gris-clair;
+    
+    @media screen and (min-width:768px){
+        width: 768px;
+        margin: 0 auto;
+    }
         &__title{
             padding: 1rem 0 0 1rem;
             z-index: 100;
@@ -28,9 +34,13 @@
     margin: 1rem;
     display: flex;
     background-color: #fff;
-    animation: slide-in-top 0.75s ease-out;
+    animation: slide-in-top 1.5s ease-out;
     cursor: pointer;
-    
+    @media screen and (min-width:455px){
+        width: 422px;
+        justify-content: center;
+        margin: 1rem auto;
+    }
     &:hover .valid{
         display: flex;
         background-color: $color-tertiaire;
@@ -41,7 +51,7 @@
         cursor: pointer;
     }
     &:hover i{
-        animation: checked_menu 1s ;
+        animation: checked_menu 1s;
     }
     &__first_container{
         display: flex;
